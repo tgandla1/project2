@@ -1,0 +1,91 @@
+body{
+  font-family:"Comic Sans MS",Helvetica,Arial;
+  margin:0 auto;
+  width:100%;
+  background-image: url("quizback.jpg");
+}
+.floatleft ul{
+  list-style:none;  
+  margin:0;
+  padding:0;
+  width:200px;  
+  margin:20px;  
+}
+.floatleft ul li{
+  display:block;
+  height:20px;    
+  padding:5px;  
+  border-top:1px solid rgba(255,255,255,.1);  
+  transition:all .5s;
+  opacity:0;
+}
+.floatleft ul li:hover{
+  background:#ADD8E6;
+}
+.floatleft ul li:last-child{
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius:4px;
+}
+.floatleft ul li a {
+	color: black;
+    display: block;
+    text-decoration: none;
+}
+.floatleft label:before{
+  height:2px;
+  width:20px;
+  background:#333;
+  display:inline-block;
+  content:"";
+  box-shadow:0px -5px 0px 0px  #333,
+             0px -10px 0px 0px #333;
+  margin-right:10px;
+  transition:all .5s;
+  position:relative;
+  opacity:1;
+}
+.floatleft label{
+  display:block;  
+  padding:10px;
+  color:white;  
+  cursor:pointer; 
+}
+input[type="checkbox"]{
+  visibility:hidden;
+  position:absolute;
+}
+#collapse:checked ~ li{  
+  margin-top:0;
+  opacity:1;
+}
+#collapse:checked + label:before{
+  position:relative;
+  right:calc(-160px);
+  opacity:0.5;
+  
+}
+
+.wrap {
+    width: 100%;
+}
+
+.floatleft {
+    float:left; 
+    width: 20%;
+    height: 400px;
+}
+
+.floatright {
+float: right;
+    height: 400px;
+    width: 80%;
+}
+
+.col
+{
+  display: inline-block;
+  width: 100%;
+  height: 20%;
+  margin-left:3%;
+}
+
